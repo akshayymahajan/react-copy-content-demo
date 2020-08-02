@@ -73,6 +73,7 @@ export default class App extends Component {
           <pre>{`
             <ClickToCopy
               contentToCopy="You can even set a custom action to be triggered on copy"
+              onCopy={() => this.onCopy("customSuccess", "Copied Successfully!")}
               render={props => (
                 <a href="#copy" onClick={props.copy}>
                   Copy
